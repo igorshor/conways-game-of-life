@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <title>Conway’s Game of Life</title>
+</head>
+<body>
+<div class="app-wrapper">
+    <div class="container-fluid">
+        <div class="top">
+            <div class="btn-group control-buttons">
+                <button id="next" class="btn btn-primary">next</button>
+                <button id="start" class="btn">start</button>
+                <button id="stop" class="btn">stop</button>
+                <button id="reset" class="btn">reset</button>
+            </div>
+            <span class="label label-info generation-count">
+                Generation: <span id="generation" class="badge">
+                </span>
+            </span>
+        </div>
+        <div class="center">
+            <div class="cells" id="cells"></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery/jquery.js"></script>
+<script src="js/helpers/matrix-helper.js"></script>
+<script src="js/helpers/event.js"></script>
+<script src="js/model/model.js"></script>
+<script src="js/model/state/state.js"></script>
+<script src="js/model/state/dead-state.js"></script>
+<script src="js/model/state/alive-state.js"></script>
+<script src="js/model/cell/cell.js"></script>
+<script src="js/model/board/cell-changed-event-args.js"></script>
+<script src="js/model/board/board.js"></script>
+<script src="js/view/view.js"></script>
+<script src="js/controller/controller.js"></script>
+<script src="js/view/view.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

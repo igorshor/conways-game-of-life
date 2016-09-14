@@ -1,0 +1,42 @@
+.app-wrapper .center .cells {
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px double black;
+  box-sizing: content-box;
+}
+.app-wrapper .center .cells .cell {
+  width: 2.5%;
+  height: 2.5%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+}
+.app-wrapper .center .cells .dead {
+  background-color: white;
+}
+.app-wrapper .center .cells .alive {
+  background-color: black;
+}
+.app-wrapper .top {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 600px;
+}
+.app-wrapper .top .generation-count {
+  position: absolute;
+  right: 3px;
+  bottom: 5px;
+}
+.app-wrapper .top .control-buttons {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+}
+.app-wrapper .top .control-buttons > .btn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
